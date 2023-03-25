@@ -37,7 +37,7 @@ mysqli_close($conn);
     <form action="#">
         <div class="row d-flex justify-content-center alert">
 
-            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center">
+            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center" style="background-color:#7388AB">
                 <div class="d-flex justify-content-end">
 
                     <a class="btn btn-primary" href="stud_profile_edit.php" role="button"><i class="fas fa-edit"></i> EDIT</a>

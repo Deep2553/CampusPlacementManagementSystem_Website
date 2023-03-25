@@ -30,12 +30,12 @@ mysqli_close($conn);
 
 
             <section class="main-content ">
-                <div class=" ">
+             
                 <h1 class=" text-center mb-4 text-gray-800">Profile</h1>
                     <form action="DB_stud_profile_edit.php" method="post" enctype="multipart/form-data">
                         <div class="row d-flex justify-content-center alert">
 
-                            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center">
+                            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center" style="background-color:#7388AB">
 
                                 <div class="banner"></div>
                                 <img src="<?php echo $image; ?>" alt="" class="image-circle mx-auto mb-4">
@@ -120,9 +120,9 @@ mysqli_close($conn);
                                     </div>
                                 </div>
 
-                                <div class="form-group p-1 d-flex justify-content-center">
+                                <div class=" p-1 d-flex  justify-content-end" >
 
-                                    <button class="btn btn-primary form-control"  name="btnAdd" type="submit">Submit</button>
+                                    <button class="btn btn-primary" style="width:120px"   name="btnAdd" type="submit">Submit</button>
 
                                 </div>
 
@@ -131,7 +131,7 @@ mysqli_close($conn);
                             </div>
                         </div>
                     </form>
-                </div>
+              
             </section>
 
       

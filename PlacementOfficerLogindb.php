@@ -14,6 +14,7 @@ if (isset($_POST['lsubmit'])) {
     } else {
         session_start();
         $row = mysqli_fetch_array($result);
+        $_SESSION['fid'] = $row['f_id']; 
         $_SESSION['roleid'] = $row['role'];
         header("Location: ./po_dashboard.php");
         mysqli_close($conn);

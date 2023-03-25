@@ -38,7 +38,7 @@ mysqli_close($conn);
 
                         <div class="row d-flex justify-content-center alert">
 
-                            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center">
+                            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center" style="background-color:#7388AB">
 
                                 <div class="d-flex justify-content-end mb-3">
 

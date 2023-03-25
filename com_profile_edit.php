@@ -36,9 +36,9 @@ mysqli_close($conn);
                 <h1 class=" text-center mb-4 text-gray-800">Profile</h1>
                     <form action="DB_com_profile_edit.php" method="post">
                         <div class="row d-flex justify-content-center alert">
-                            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center">
+                            <div class="profile-card rounded-1g shadow p-4 p-xl-5 mb-4 text-center" style="background-color:#7388AB">
 
-                                <div class="text-left mb-4">
+                                <div class="text-left">
 
                                     <div class="form-group p-1">
                                         <div class="input-group">
@@ -117,10 +117,9 @@ mysqli_close($conn);
                                         </div>
                                     </div>
 
-                                    <div class="form-group p-1 d-flex justify-content-center">
+                                    <div class=" p-1 d-flex justify-content-center">
 
-                                        <button class="btn btn-primary form-control" name="btnAdd"
-                                            type="submit">Submit</button>
+                                    <button class="btn btn-primary" style="width:120px"   name="btnAdd" type="submit">Submit</button>
 
                                     </div>
 

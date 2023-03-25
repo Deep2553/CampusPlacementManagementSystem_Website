@@ -50,6 +50,18 @@
             box-shadow: 5px 6px 6px 2px #e9ecef;
             transform: scale(1.05);
         }
+
+        tr:nth-of-type(odd) {
+            background: #3C4B64;
+        }
+
+        th {
+            background: #7388AB;
+            color: white;
+            font-weight: bold;
+        }
+
+     
     </style>
 
 </head>
@@ -63,7 +75,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="company_dashboard.php">
                 <div class="sidebar-brand-icon rotate-n-15">
 
                 </div>

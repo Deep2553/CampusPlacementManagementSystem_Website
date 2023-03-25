@@ -6,7 +6,7 @@ include('com_header.php');
 <?php
 $uid = $_SESSION['userid'];
 $conn = mysqli_connect("localhost", "root", "", "minor_project");
-$query = "SELECT student.s_id, student.s_name,student.s_email,student.s_degname,jobdetails.j_title,jobdetails.j_id,apply.student_id,apply.jobdetail_id FROM student INNER JOIN apply ON student.s_id=apply.student_id INNER JOIN jobdetails ON jobdetails.j_id=apply.jobdetail_id where jobdetails.userid=$uid and apply.status=1";
+$query = "SELECT student.s_id, student.s_name,student.s_email,student.s_degname,jobdetails.j_title,jobdetails.j_id,apply.student_id,apply.jobdetail_id FROM student INNER JOIN apply ON student.s_id=apply.student_id INNER JOIN jobdetails ON jobdetails.j_id=apply.jobdetail_id where jobdetails.userid=$uid and apply.status=1 and student.selected_status=1";
 $count = 0;
 $records = mysqli_query($conn, $query);
 mysqli_close($conn);

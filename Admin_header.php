@@ -50,6 +50,16 @@
             box-shadow: 5px 6px 6px 2px #e9ecef;
             transform: scale(1.05);
         }
+
+        tr:nth-of-type(odd) {
+            background: #C7C7C7;
+        }
+
+        th {
+            background: #7388AB;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 
 </head>
@@ -63,7 +73,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Admin_dashboard.php">
                 <div class="sidebar-brand-icon rotate-n-15">
 
                 </div>
@@ -118,7 +128,6 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -134,10 +143,6 @@
 
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="com_profile.php">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 " style="color:#3C4B64"></i>
-                                    Profile
-                                </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 " style="color:#3C4B64"></i>

@@ -67,11 +67,11 @@ mysqli_close($conn);
                             <input type="hidden" name="id" value="<?php echo $row1['j_id']; ?>" />                
                             <input type="date" name="sd" value="<?php echo $row1['s_date']; ?>" />                                                
                             <?php if ($row1['joba_status'] == 2) { ?>
-                                <button type="submit" name="ScheduleDate" class="btn-sm btn-secondary" disabled>ScheduleDate</button>
+                                <button type="submit" name="ScheduleDate" class="btn btn-secondary"  disabled>ScheduleDate</button>
                             <?php } else if ($row1['joba_status'] == 0) { ?> 
-                                        <button type="submit" name="ScheduleDate" class="btn-sm btn-secondary" disabled>ScheduleDate</button>
+                                        <button type="submit" name="ScheduleDate" class="btn btn-secondary" disabled>ScheduleDate</button>
                             <?php } else { ?> 
-                                <button type="submit" name="ScheduleDate" class="btn-sm btn-primary">ScheduleDate</button>
+                                <button type="submit" name="ScheduleDate" class="btn btn-primary" style="width:120px">ScheduleDate</button>
                             <?php } ?>
                           
                         </form>

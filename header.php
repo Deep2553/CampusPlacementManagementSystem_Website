@@ -21,13 +21,13 @@
     <link href="./css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
- 
 
-    <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css"/>
 
-    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" />
 
-    <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
@@ -35,16 +35,31 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 
-    <style>     
-     .image-circle {
-         height: 150px;
-         width: 150px;
-         border-radius: 150px;
-         border: 2px solid #000000;
-         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-         z-index: 1;
-     }   
- </style>
+    <style>
+        .image-circle {
+            height: 150px;
+            width: 150px;
+            border-radius: 33px;
+            border: 2px;
+            border-style: solid;
+            border-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            z-index: 1;
+            padding: 0.3rem !important;
+        }
+
+        tr:nth-of-type(odd) {
+            background: #C7C7C7;
+        }
+
+        th {
+            background: #7388AB;
+            color: white;
+            font-weight: bold;
+        }
+
+
+    </style>
 
 </head>
 
@@ -57,9 +72,9 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="student_dashboard.php">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    
+
                 </div>
                 <i class="fas fa-laugh-wink"></i>
                 <div class="sidebar-brand-text mx-3">Student</div>
@@ -69,9 +84,9 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-           
+
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.php">
+                <a class="nav-link" href="student_dashboard.php">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -85,9 +100,9 @@
                     <i class="fas fa-arrow-circle-right"></i>
                     <span>Applied Job</span></a>
             </li>
-           
-           
-           
+
+
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline mt-5">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -119,14 +134,14 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow  ml-auto">
-                        <a class="btn btn-outline-light " type="button" data-toggle="dropdown">
-                          <span class="fa fa-user fa-2x fa-fade" style="color:#3C4B64"></span></a>
+                            <a class="btn btn-outline-light " type="button" data-toggle="dropdown">
+                                <span class="fa fa-user fa-2x fa-fade" style="color:#3C4B64"></span></a>
                             <!-- Dropdown - User Information -->
-                           
+
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="student_profile.php">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 "  style="color:#3C4B64"></i>
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 " style="color:#3C4B64"></i>
                                     Profile
                                 </a>
                                 <div class="dropdown-divider"></div>
@@ -134,8 +149,8 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 " style="color:#3C4B64"></i>
                                     Logout
                                 </a>
-                            </div>                    
-                           
+                            </div>
+
                         </li>
 
                     </ul>
@@ -145,4 +160,3 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                 

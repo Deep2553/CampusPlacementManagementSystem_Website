@@ -1,11 +1,11 @@
 
     <?php
-
+    session_start();
     include "com_header.php";
     ?>
    
-        
 
+  
         <div>
             <section class="main-content ">
                 
@@ -108,6 +108,3 @@
     <?php
     include "footer.php";
     ?>
-</body>
-
-</html>

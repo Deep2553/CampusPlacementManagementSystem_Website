@@ -38,14 +38,14 @@ include('com_header.php');
         ?>
 
         <td>
-                                   <form action="seljobwisestudlistbtn.php" method="POST">
+                                   <form action="com_seljobwisestudlistbtn.php" method="POST">
                                         <input type="hidden" name="jid" value="<?php echo $row['j_id']; ?>" />
                                         <button type="submit" name="apply" class="btn btn-success"><i class="fa-solid fa-eye"></i>&nbsp;View</button>
                                     </form>
             
         </td>
         <td>
-                                    <form action="seljobwisestudlistreport.php" method="POST">
+                                    <form action="com_seljobwisestudlistreport.php" method="POST">
                                         <input type="hidden" name="jid" value="<?php echo $row['j_id']; ?>" />
                                         <button type="submit" name="apply" class="btn btn-danger"><i class="fa-solid fa-file-pdf"></i>&nbsp;Download</button>
                                     </form>

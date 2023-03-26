@@ -57,8 +57,6 @@
             color: white;
             font-weight: bold;
         }
-
-
     </style>
 
 </head>
@@ -119,6 +117,19 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <?php
+                    $id = $_SESSION['sid'];
+                    $conn = mysqli_connect("localhost", "root", "", "minor_project");
+                    $count = 0;
+                    $query = "SELECT * FROM student WHERE s_id=$id";
+                    $records = mysqli_query($conn, $query);
+                    $row = mysqli_fetch_array($records);
+                    mysqli_close($conn);
+                    ?>
+
+                    <h1 class="h4 text-gray-800">Welcome
+                        <?php echo "$row[s_name]" ?>
+                    </h1>
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">

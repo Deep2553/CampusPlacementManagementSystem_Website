@@ -5,14 +5,10 @@ class PDF extends FPDF
     /* Page header */
     function Header()
     {
-
+        $this->SetLeftMargin(30);
         $this->SetFont('Arial', 'B', 15);
-        /* Move to the right */
-        $this->Cell(40);
-
-        $this->Cell(100, 10, 'Job Wise Selected Student', 1, 0, 'C');
-        $this->Ln(20);
-
+        $this->Cell(50, 10, 'CPMS');
+        $this->Ln(7);
     }
     /* Page footer */
     function Footer()
@@ -27,11 +23,36 @@ class PDF extends FPDF
 }
 
 /* Instanciation of inherited class */
+session_start();
+$id = $_SESSION['fid'];
+$conn1 = new mysqli("localhost", "root", "", "minor_project");
+$query1 = "SELECT faculty.f_name from faculty where f_id=$id ";
+$record1 = $conn1->query($query1);
+$row1 = $record1->fetch_array();
+$dt = date("d/m/Y");
+
+
+/* Instanciation of inherited class */
 $pdf = new PDF();
 $pdf->AliasNbPages();
 $pdf->AddPage();
+$pdf->SetFont('Arial', 'B', 10);
+$pdf->Cell(13, 10, 'Name : ');
+$pdf->SetFont('Arial', '', 10);
+$pdf->Cell(0, 10, $row1['f_name']);
+$pdf->Ln(5);
+$pdf->SetFont('Arial', 'B', 10);
+$pdf->Cell(20, 10, 'Print Date : ');
+$pdf->SetFont('Arial', '', 10);
+$pdf->Cell(0, 10, $dt);
+$pdf->Ln(15);
+$title;
+$pdf->title = $_POST['jt'] . " Selected Student List";
+$pdf->SetFont('Arial', 'B', 15);
+$pdf->Cell(20);
+$pdf->Cell(100, 10, $pdf->title, 1, 0, 'C');
+$pdf->Ln(20);
 $pdf->SetFont('Times', '', 12);
-$pdf->SetLeftMargin(30);
 $pdf->SetFillColor(193, 229, 252);
 $pdf->Cell(20, 10, 'No', 1, 0, 'C', true);
 $pdf->Cell(40, 10, 'student name', 1, 0, 'C', true);

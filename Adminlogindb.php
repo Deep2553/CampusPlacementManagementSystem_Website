@@ -16,6 +16,7 @@ if (isset($_POST['lsubmit'])) {
         session_start();
         $row = mysqli_fetch_array($result);
         $_SESSION['roleid'] = $row['role'];
+        $_SESSION['fid'] = $row['f_id'];
         header("Location: ./Admin_dashboard.php");
         mysqli_close($conn);
     }

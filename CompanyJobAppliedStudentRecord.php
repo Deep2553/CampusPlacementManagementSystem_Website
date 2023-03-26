@@ -32,7 +32,7 @@ mysqli_close($conn);
             <?php
             while (($row = mysqli_fetch_array($records)) == true) {
 
-
+                $_SESSION['jobid'] = $row['j_id'];
                 echo "<tr style='text-align: center;'>";
                 echo "<td>" . ++$count . "</td>";
                 echo "<td>" . $row['s_name'] . "</td>";

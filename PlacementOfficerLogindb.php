@@ -10,7 +10,7 @@ if (isset($_POST['lsubmit'])) {
 
     if ($count == 0) {
         echo "<h1> Username and Password is Incorrect...!!! </h1>";
-        include "PlacementOfficerDashboard.php";
+        include "PlacementOfficerLogin.php";
     } else {
         session_start();
         $row = mysqli_fetch_array($result);

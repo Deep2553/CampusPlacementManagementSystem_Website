@@ -11,7 +11,7 @@ $records = mysqli_query($conn, $query);
 mysqli_close($conn);
 ?>
 <!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800">Job Status And Schedule Date</h1>
+<h1 class="h3 mb-4 text-gray-800">Pending Company List</h1>
 
 <div class="">
     <div class="table-responsive">
@@ -25,7 +25,7 @@ mysqli_close($conn);
                     <th>PinCode</th>
                     <th>Company Person Name</th>
                     <th>Company Person Number</th>
-                    <th>Status</th>
+                    <th>Approve/Reject</th>
 
                 </tr>
             </thead>
@@ -51,12 +51,12 @@ mysqli_close($conn);
                             <input type="hidden" name="id" value="<?php echo $row['c_id']; ?>" />
                             <button type="submit" name="approve" class="btn btn-success rounded-circle" style="height:40px;width:40px"><i class="fa-solid fa-check"></i></button>
                         </form>
-                        <div class="col-1">
+                        &nbsp;&nbsp;
                         <form action="po_com_reject.php" method="POST">
                         <button type="submit" name="delete" class="btn btn-danger rounded-circle" style="height:40px;width:40px"><i class="fa-sharp fa-solid fa-xmark"></i></button>
                             <input type="hidden" name="id" value="<?php echo $row['c_id']; ?>" />
                         </form>
-                        </div>
+                      
                     </div>
 
                 </td>

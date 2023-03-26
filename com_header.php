@@ -60,8 +60,6 @@
             color: white;
             font-weight: bold;
         }
-
-     
     </style>
 
 </head>
@@ -131,11 +129,26 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                  
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+
+                    <?php
+                    
+                    $id = $_SESSION['userid'];
+                    $conn = mysqli_connect("localhost", "root", "", "minor_project");
+                    $query = "SELECT c_name FROM company WHERE c_id='$id'";
+                    $records = mysqli_query($conn, $query);
+                    $row5 = mysqli_fetch_array($records);
+                    mysqli_close($conn);
+                    ?>
+
+                    <h1 class="h4 text-gray-800">Welcome
+                        <?php echo $row5['c_name']; ?>
+                    </h1>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">

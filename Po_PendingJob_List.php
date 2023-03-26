@@ -11,7 +11,7 @@ $records = mysqli_query($conn, $query);
 mysqli_close($conn);
 ?>
 <!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800">Job Status And Schedule Date</h1>
+<h1 class="h3 mb-4 text-gray-800">Pending Job List</h1>
 
 <div class="">
     <div class="table-responsive">
@@ -23,7 +23,7 @@ mysqli_close($conn);
                     <th>Job Type</th>
                     <th>Skill</th>
                     <th>Salary</th>
-                    <th>Status</th>
+                    <th>Approve/Reject</th>
 
 
                 </tr>
@@ -48,12 +48,11 @@ mysqli_close($conn);
                             <input type="hidden" name="id" value="<?php echo $row['j_id']; ?>" />
                             <button type="submit" name="approve" class="btn btn-success rounded-circle" style="height:40px;width:40px"><i class="fa-solid fa-check"></i></button>
                         </form>
-                        <div class="col-1">
+                        &nbsp;&nbsp;
                         <form action="po_job_reject.php" method="POST">
                         <button type="submit" name="delete" class="btn btn-danger rounded-circle" style="height:40px;width:40px"><i class="fa-sharp fa-solid fa-xmark"></i></button>
                             <input type="hidden" name="id" value="<?php echo $row['j_id']; ?>" />
-                        </form>
-                        </div>
+                        </form>                       
                     </div>
 
                 </td>

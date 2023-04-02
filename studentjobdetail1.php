@@ -77,6 +77,8 @@ $records = mysqli_query($conn, $query);
                         echo "Applied";
                     else if ($row['status'] == "2")
                         echo "<h5 style=color:green>Selected</h5>";
+                        else if ($row['status'] == "3")
+                        echo "<h5 style=color:red>Reject</h5>";
                 }
             } else {
                 echo "Not applied";
@@ -104,10 +106,14 @@ $records = mysqli_query($conn, $query);
                         <button type="submit" name="apply" class="btn btn-success">Apply</button>
                     </form>
 
-            <?php } else if ($row2['status'] == "2") { ?>
-                        <input type="submit" name="selectbtn" value="Selected" disabled> &nbsp;
+            <?php } else if ($row2['status'] == "3") { ?>
+                        <form action="NotApplySJB.php" method="POST">
+                            <input type="hidden" name="id" value="<?php echo $tj_id; ?>" />
+                            <button type="submit" name="notapply" class="btn btn-danger" disabled>---</button> 
+                        </form>
+           
 
-            <?php } else { ?>
+                 <?php } else  { ?>
                         <form action="NotApplySJB.php" method="POST">
                             <input type="hidden" name="id" value="<?php echo $tj_id; ?>" />
                             <button type="submit" name="notapply" class="btn btn-danger">Not&nbsp;Apply</button> 

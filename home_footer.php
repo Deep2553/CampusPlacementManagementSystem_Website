@@ -1,56 +1,66 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer text-white" style="background-color:#3C4B64; height:80px ; " >
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto"style=font-size:15px;>
+                        <span >Copyright &copy; CPMS <?php echo date('Y'); ?></span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
     
 
-</head>
-<body>
-<footer class="text-center  " style="clear:both;background-color: #3A98B9; color:#E8D5C4">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section>
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f" style="color:#E8D5C4"></i
-      ></a>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-twitter" style="color:#E8D5C4"></i
-      ></a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready To Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" Below If You Are Ready To End Your Current Session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="LogOut.php">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-google" style="color:#E8D5C4"></i
-      ></a>
+    <!-- Bootstrap core JavaScript-->
 
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram" style="color:#E8D5C4"></i
-      ></a>
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in" style="color:#E8D5C4"></i
-      ></a>
+    <!-- Core plugin JavaScript-->
+    <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
 
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github" style="color:#E8D5C4"></i
-      ></a>
-<br>
-© 2023 Copyright:
-      <a>CPMS</a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
+    <!-- Custom scripts for all pages-->
+    <script src="./js/sb-admin-2.min.js"></script>
 
-  
-</footer>
+    <!-- Page level plugins -->
+    <script src="./vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="./vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <script type="text/javascript" src="./vendor/parsley/dist/parsley.min.js"></script>
+
+    <script type="text/javascript" src="./vendor/bootstrap-select/bootstrap-select.min.js"></script>
+
+    <script type="text/javascript" src="./vendor/datepicker/bootstrap-datepicker.js"></script>
+
 </body>
+
 </html>

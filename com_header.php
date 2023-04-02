@@ -99,12 +99,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="CompanyJobRecord.php">
                     <i class="far fa-calendar-check"></i>
-                    <span>Schedule Date</span></a>
+                    <span>Schedule Recruitment</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="CompanyJobAppliedStudentRecord.php">
                     <i class="fas fa-check-square"></i>
-                    <span>Select Student</span></a>
+                    <span>Job Offer</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Com_reports.php">

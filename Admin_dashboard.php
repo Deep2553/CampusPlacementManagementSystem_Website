@@ -84,7 +84,7 @@ mysqli_close($conn);
 <?php
 $conn = mysqli_connect("localhost", "root", "", "minor_project");
 $count = 0;
-$query = "SELECT f_id FROM faculty WHERE role=1";
+$query = "SELECT f_id FROM faculty WHERE role=2";
 $records = mysqli_query($conn, $query);
 $rowcount11 = mysqli_num_rows($records);
 mysqli_close($conn);
@@ -93,7 +93,7 @@ mysqli_close($conn);
 <?php
 $conn = mysqli_connect("localhost", "root", "", "minor_project");
 $count = 0;
-$query = "SELECT f_id FROM faculty WHERE role=2";
+$query = "SELECT f_id FROM faculty WHERE role=1";
 $records = mysqli_query($conn, $query);
 $rowcount12 = mysqli_num_rows($records);
 mysqli_close($conn);

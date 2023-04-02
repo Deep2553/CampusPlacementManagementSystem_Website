@@ -13,7 +13,7 @@ $records = mysqli_query($conn, $query);
 mysqli_close($conn);
 ?>
 <!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800">Job Status And Schedule Date</h1>
+<h1 class="h3 mb-4 text-gray-800">Schedule Recruitment</h1>
 
 <div class="">
     <div class="table-responsive">

@@ -1,44 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home page</title>
-    <link rel="stylesheet" href="bootstrap-4.6.1/dist/css/bootstrap.css">
-    <script src="bootstrap-4.6.1/dist/js/jquery.js"></script>
-    <script src="bootstrap-4.6.1/dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="bootstrap-4.6.1\fontawesome-free-5.15.4-web\css\all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="VCSS/teamMembers.css">
-    <style>
-        .layout_padding {
-            padding-top: 40px;
-            padding-bottom: 0px;
-        }
-
-        hr {
-
-            border: none;
-            border-left: 1px solid hsla(200, 10%, 50%, 100);
-            height: 100%;
-            width: 1px;
-        }
-
-        body{
-            background-color:#FFF1DC;
-        }
-    </style>
-</head>
-
-<body style=" font-family: 'Nunito', sans-serif; font-size:150%">
-
-
-    <?php
-    include "home_header.php";
+<?php
+    include "homepage_header.php";
     ?>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -83,7 +45,7 @@
 
     <div class="justify-content-center layout_padding">
 
-        <div class="container">
+        <div class="container" id="elem">
             <h1 class="alert text-center font-weight-bold " style="color: #f76d37;font-size: 60px;"> About</h1>
             <div class="row alert">
                 <div class="col-md-5 ">
@@ -120,7 +82,7 @@
     </div>
 
 
-    <div class="layout_padding">
+    <div class="layout_padding" id="section3">
         <div class="container mt-5 mb-3">
             <h2 class="text-center font-weight-bold " style="color: #f76d37;font-size: 60px;"> Team Members </h2>
         </div>
@@ -174,6 +136,3 @@
     <?php
     include "home_footer.php";
     ?>
-</body>
-
-</html>

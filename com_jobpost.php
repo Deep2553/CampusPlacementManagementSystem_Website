@@ -55,8 +55,9 @@
                                                 <option disabled="disabled" selected="selected">Choose Option</option>
                                                 <option value="BCA">BCA</option>
                                                 <option value="MCA">MCA</option>
-                                                <option value="Bscit">Bscit</option>
-                                                <option value="Mscit">Mscit</option>
+                                                <option value="Bscit">B.Sc(IT)</option>
+                                                <option value="Mscit">M.Sc(IT)</option>
+                                                <option value="Ph.D">Ph.D</option>
                                             </select>
                                         </div>
                                     </div>

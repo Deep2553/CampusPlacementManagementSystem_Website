@@ -25,7 +25,7 @@ mysqli_close($conn);
             <thead>
                 <tr>
                     <th>Index no</th>
-                    <th>Job Title</th>
+                    <th>Job Title</th>  
                     <th>Status</th>
                     <th>Post Date</th>
                 </tr>

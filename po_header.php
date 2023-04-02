@@ -25,7 +25,6 @@
 
     <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" />
 
-    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" />
 
@@ -35,7 +34,7 @@
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-
+    <link rel="stylesheet" href="VCSS/fileupload.css">
     <style>
         .py-2 {
 
@@ -105,6 +104,11 @@
                 <a class="nav-link" href="po_reports.php">
                     <i class="fa fa-pie-chart"></i>
                     <span>Reports</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="po_uploadstudent.php">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Student Details</span></a>
             </li>
 
 

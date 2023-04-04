@@ -36,7 +36,7 @@
                        
                         <div class="input-group">
                         <label class="label">Email</label>
-                                    <input class="input--style-4" type="text" name="txtEmail">
+                                    <input class="input--style-4" type="email" name="txtEmail">
                         </div>
                         <div class="input-group">
                         <label class="label"> Password:</label>

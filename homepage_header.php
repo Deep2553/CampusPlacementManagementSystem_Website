@@ -21,12 +21,13 @@
     <link href="./css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-
+    <link href="css/cnt.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-4.6.1/dist/css/bootstrap.css">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" />
 
     <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" />
-
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -38,6 +39,10 @@
     <link rel="stylesheet" href="VCSS/style.css">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .layout_padding {
             padding-top: 40px;
             padding-bottom: 0px;
@@ -84,7 +89,7 @@
             left: -25px;
         }
     </style>
- 
+
 
 </head>
 
@@ -97,7 +102,7 @@
         <nav class="navbar navbar-expand-lg navbar-light p-1" style="background-color:#3C4B64;  ">
 
             <div class="navbar-brand">
-                <div class="logo "><a href="index.html"><img class="ig" src="pic/logo3.png"></a></div>
+                <div class="logo "><a href="home_page.php"><img class="ig" src="pic/logo3.png"></a></div>
             </div>
 
             <button type="button" class="btn navbar-toggler" data-toggle="collapse" data-target="#mymenu">
@@ -107,19 +112,16 @@
 
                 <ul class="nav lft " style="font-size:20px;">
                     <li class="nav-item">
-                        <a class="nav-link nav-c " href="home_page.php" >Home</a>
+                        <a class="nav-link nav-c  " href="home_page.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-c" href="#" >About</a>
+                        <a class="nav-link nav-c" href="#elem">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-c" href="#section3" id="">Contact</a>
+                        <a class="nav-link nav-c" href="#contact" id="">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-c " href="#">Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-c" href="#">Survay</a>
+                        <a class="nav-link nav-c " href="#clients">Opportunities</a>
                     </li>
                 </ul>
             </div>
@@ -157,8 +159,8 @@
         <script>
             const btn = document.getElementById('elem');
 
-btn.addEventListener('click', () => window.scrollTo({
-  top: 400,
-  behavior: 'smooth',
-}));
-            </script>
+            btn.addEventListener('click', () => window.scrollTo({
+                top: 400,
+                behavior: 'smooth',
+            }));
+        </script>

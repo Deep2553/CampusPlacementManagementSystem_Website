@@ -39,13 +39,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Student Name</label>
-                                    <input class="input--style-4" type="text" name="txtName">
+                                    <input class="input--style-4" type="text" name="txtName" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Password</label>
-                                    <input class="input--style-4" name="txtPassword" type="password">
+                                    <input class="input--style-4" name="txtPassword" type="password" >
                                 </div>
                             </div>
                         </div>

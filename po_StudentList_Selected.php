@@ -5,9 +5,8 @@ include('po_header.php');
 
 <?php
 $id = $_POST['id'];
-$jid = $_POST['jid'];
 $conn = mysqli_connect("localhost", "root", "", "minor_project");
-$query = "SELECT student.s_id, student.s_name,student.s_email,student.s_degname,jobdetails.j_title,jobdetails.j_id,jobdetails.j_type,apply.student_id,apply.jobdetail_id FROM student INNER JOIN apply ON student.s_id=apply.student_id INNER JOIN jobdetails ON jobdetails.j_id=apply.jobdetail_id where jobdetails.userid=$id and apply.status=2 and jobdetails.j_id=$jid";
+$query = "SELECT student.s_id, student.s_name,student.s_email,student.s_degname,jobdetails.j_title,jobdetails.j_id,jobdetails.j_type,apply.student_id,apply.jobdetail_id FROM student INNER JOIN apply ON student.s_id=apply.student_id INNER JOIN jobdetails ON jobdetails.j_id=apply.jobdetail_id where jobdetails.userid=$id and apply.status=2";
 $count = 0;
 $records = mysqli_query($conn, $query);
 mysqli_close($conn);

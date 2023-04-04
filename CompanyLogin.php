@@ -36,11 +36,11 @@
                        
                         <div class="input-group">
                         <label class="label">Email</label>
-                                    <input class="input--style-4" type="text" name="txtEmail">
+                                    <input class="input--style-4" type="email" name="txtEmail" required>
                         </div>
                         <div class="input-group">
                         <label class="label"> Password:</label>
-                        <input class="input--style-4" name="txtPassword" type="password">
+                        <input class="input--style-4" name="txtPassword" type="password" required>
                         </div>
                         <div class="p-t-15">
                             <button class="btn btn--radius-2 btn--blue" type="submit" name="lsubmit">Login</button>

@@ -243,6 +243,7 @@
                         </div>
                         <div class="p-t-15">
                             <button class="btn btn--radius-2 btn--blue" name="btnAdd" type="submit">Submit</button>
+                            <a style="display: flex; justify-content: flex-end;" href="home_page.php">Back to home</a>
                         </div>
 
                     </form>

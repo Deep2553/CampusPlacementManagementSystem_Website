@@ -1,5 +1,12 @@
 <?php
 session_start();
+if (!isset($_SESSION['userid'])) {
+    header("Location: ./CompanyLogin.php");
+}
+?>
+
+<?php
+
 $conn = mysqli_connect("localhost", "root", "", "minor_project");
 $id = $_SESSION['userid'];
 $query = "select * from jobdetails where userid=$id";

@@ -1,5 +1,12 @@
 <?php
 session_start();
+if (!isset($_SESSION['fid'])) {
+    header("Location: ./Admin_Login.php");
+}
+?>
+
+
+<?php
 include('Admin_header.php');
 ?>
 

@@ -1,5 +1,12 @@
 <?php
 session_start();
+if (!isset($_SESSION['fid'])) {
+    header("Location: ./PlacementOfficerLogin.php");
+}
+?>
+
+
+<?php
 include('po_header.php');
 ?>
 

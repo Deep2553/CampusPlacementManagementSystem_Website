@@ -1,5 +1,11 @@
 <?php
 session_start();
+if (!isset($_SESSION['fid'])) {
+    header("Location: ./PlacementOfficerLogin.php");
+}
+?>
+
+<?php
 $conn = mysqli_connect("localhost", "root", "", "minor_project");
 $count = 0;
 $query = "SELECT company.c_id from company;";

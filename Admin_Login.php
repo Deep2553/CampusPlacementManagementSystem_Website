@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Placement Officer login</title>
+    <title>login</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -44,6 +44,7 @@
                         </div>
                         <div class="p-t-15">
                             <button class="btn btn--radius-2 btn--blue" type="submit" name="lsubmit">Login</button>
+                            <a style="display: flex; justify-content: flex-end;" href="home_page.php">Back to home</a>
                         </div>
                     </form>
                 </div>

@@ -1,7 +1,12 @@
-
-
 <?php
 session_start();
+if (!isset($_SESSION['fid'])) {
+    header("Location: ./Admin_Login.php");
+}
+?>
+
+<?php
+
 include('Admin_header.php');
 ?>
 
@@ -36,13 +41,13 @@ include('Admin_header.php');
         echo "<td>" . $row['c_name'] . "</td>";
       ?>
         <td>
-                        <form action="po_StudentList_Applied.php" method="POST">
+                        <form action="Admin_StudentList_Applied.php" method="POST">
                             <input type="hidden" name="id" value="<?php echo $row['c_id']; ?>" />                         
                             <button type="submit" name="apply" class="btn btn-success"><i class="fa-solid fa-eye"></i>&nbsp;View</button>
                         </form>
                     </td>
                     <td>
-                        <form action="po_StudentList_Selected.php" method="POST">
+                        <form action="Admin_StudentList_Selected.php" method="POST">
                             <input type="hidden" name="id" value="<?php echo $row['c_id']; ?>" />                          
                             <button type="submit" name="apply" class="btn btn-success"><i class="fa-solid fa-eye"></i>&nbsp;View</button>
                         </form>

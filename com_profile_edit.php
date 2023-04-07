@@ -1,6 +1,11 @@
 <?php
-
 session_start();
+if (!isset($_SESSION['userid'])) {
+    header("Location: ./CompanyLogin.php");
+}
+?>
+
+<?php
 
 $id = $_SESSION['userid'];
 $conn = mysqli_connect("localhost", "root", "", "minor_project");

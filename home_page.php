@@ -10,23 +10,23 @@ include "homepage_header.php";
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="pic/charusat1.jpg" class="d-block w-100" alt="..." height="750">
+            <img src="pic/1.jpg" class="d-block w-100" alt="..." height="750">
             <div class="carousel-caption d-none d-md-block">
-                <h5 style=>Charusat University</h5>
+                <h5 style=>CPMS</h5>
 
             </div>
         </div>
         <div class="carousel-item">
             <img src="pic/2.jpg" class="d-block w-100" alt="..." height="750">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <!-- <h5>Second slide label</h5> -->
 
             </div>
         </div>
         <div class="carousel-item">
             <img src="pic/3.jpg" class="d-block w-100" alt="..." height="750">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
+                <!-- <h5>Third slide label</h5> -->
 
             </div>
         </div>
@@ -49,12 +49,20 @@ include "homepage_header.php";
         <div class="row alert">
             <div class="col-md-5 ">
                 <div>
-                    <h3 class="text-center font-weight-bold">Why India?</h3>
+                    <h3 class="text-center font-weight-bold">Why CPMS ?</h3>
                     <ul>
-                        <li>Experience "ऐक्यम्" (Unity) of diverse religions, cultures & cuisines</li>
-                        <li>Spiritual nation with folkloric festivities</li>
-                        <li>Key source of intellectual capital including IT & BPM industry</li>
-                        <li>Hub of impact-driven research & Technology Transfer</li>
+                        <li> CPMS is a total management and informative system, which provides the up- to-date
+                            information of all the students in the college.
+                        </li>
+                        <li>Our system also help the college to overcome the difficulty in keeping records of hundreds
+                            of students and searching for a student eligible for recruitment criteria from the whole
+                            thing.
+                        </li>
+                        <li>The system mainly helps in improving productivity and makes use of utilization of resources
+
+                        </li>
+                        <li>There is no duplication of work as this was not the case when done manually
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -66,12 +74,16 @@ include "homepage_header.php";
             <div class="col-md-5">
 
                 <div>
-                    <h3 class="text-center font-weight-bold">Why CHARUSAT?</h3>
+                    <h3 class="text-center font-weight-bold">Facilities</h3>
                     <ul>
-                        <li>The fountainhead of startups</li>
-                        <li>Fatherland to numerous conscientious businessmen</li>
-                        <li>Remarkable presence of MNCs providing ever increasing job opportunities</li>
-                        <li>Undisputedly the only alcohol- and narcotic-free Gandhian state of India</li>
+                        <li>Provides a proper communication channel between student and placement department using the
+                            SMS and Mail.
+                        </li>
+                        <li>Latest information about which company is visiting the campus is provided in the webapp
+                            which helps the students to get updated information quickly</li>
+                        <li>WebApp is user friendly with more GUI so that student view the information easily.
+                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -85,7 +97,8 @@ include "homepage_header.php";
     <div class="container">
         <div class="section-title">
             <h1 class="alert text-center font-weight-bold " style="color: #f76d37;font-size: 50px;">The Opportunities
-                <span>We Offer</h1>
+                <span>We Offer
+            </h1>
 
             <div class="clients-slider swiper mt-5">
                 <div class="swiper-wrapper align-items-center">
@@ -113,11 +126,11 @@ include "homepage_header.php";
     <div class="main">
         <div class="profile-card">
             <div class="img">
-                <img src="pic/mx.jpg" height="160px" width="160px">
+                <img src="pic/01.jpg" height="160px" width="160px">
             </div>
             <div class="caption">
                 <h3>Mayur Thakkar</h3>
-                <p>Senior App Developer</p>
+                <p>Developer</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -127,11 +140,11 @@ include "homepage_header.php";
         </div>
         <div class="profile-card">
             <div class="img">
-                <img src="pic/dip.jpeg" height="160px" width="160px">
+                <img src="pic/02.jpg" height="160px" width="160px">
             </div>
             <div class="caption">
                 <h3>Deep Patel</h3>
-                <p>Full Stack Developer</p>
+                <p>Developer</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -145,7 +158,7 @@ include "homepage_header.php";
             </div>
             <div class="caption">
                 <h3>Viral Patel</h3>
-                <p>peon</p>
+                <p></p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -162,7 +175,9 @@ include "homepage_header.php";
     <div class="container">
 
         <div class="section-title">
-        <h1 class="alert text-center font-weight-bold " style="color: #f76d37;font-size: 50px;">Contact <span>Us</span></h1>
+            <h1 class="alert text-center font-weight-bold " style="color: #f76d37;font-size: 50px;">Contact
+                <span>Us</span>
+            </h1>
         </div>
 
         <div>
@@ -173,7 +188,7 @@ include "homepage_header.php";
 
         <div class="row mt-5">
 
-            <div class="col-lg-5"  >
+            <div class="col-lg-5">
                 <div class="info" style=" background-color: #FFF1DC;">
                     <div class="address">
                         <i class="bi bi-geo-alt"></i>
@@ -184,7 +199,7 @@ include "homepage_header.php";
                     <div class="email">
                         <i class="bi bi-envelope"></i>
                         <h4>Email:</h4>
-                        <p><a href="mailto:cpms789@gmail.com">cpms789@gmail.com</a> </p>
+                        <p><a href="mailto:cpms789@gmail.com">cpms388@gmail.com</a> </p>
                     </div>
 
                     <br>
@@ -192,16 +207,17 @@ include "homepage_header.php";
                     <div class="whatsapp">
                         <i class="bi bi-whatsapp"></i>
                         <h4>Call:</h4>
-                        <p><a href="tel:+918866319830">+91 8866319830</a> </p>
+                        <p><a href="tel:+918866319830">+91 9409561244 , 6351497690</a> </p>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col-lg-7 mt-5 mt-lg-0" >
+            <div class="col-lg-7 mt-5 mt-lg-0">
 
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form" style=" background-color: #FFF1DC;">
+                <form action="DBContact.php" method="post" role="form" class="php-email-form"
+                    style=" background-color: #FFF1DC;">
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"

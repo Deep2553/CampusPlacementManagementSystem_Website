@@ -1,5 +1,13 @@
 <?php
 session_start();
+if (!isset($_SESSION['userid'])) {
+    header("Location: ./CompanyLogin.php");
+}
+?>
+
+
+<?php
+
 include('com_header.php');
 ?>
 

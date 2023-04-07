@@ -133,20 +133,20 @@
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Student</div>
                     <a class="dropdown-item" href="StudentLogin.php">
-                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
+                        <span class="fas fa-sign-in-alt "></span>&nbsp;&nbsp;<B>Login</B></a>
                     <!-- <a class="dropdown-item" href="./StudentRegistration.php">
                         <span class="fas fa-sign-out-alt"></span>&nbsp;&nbsp;Sign Up</a> -->
-                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Company</div>
+                    <div class="dropdown-item-text text-white " style="background-color: #3C4B64">Company</div>
                     <a class="dropdown-item" href="CompanyLogin.php">
-                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
+                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;<B>Login</B></a>
                     <a class="dropdown-item" href="CompanyRegistration.php">
-                        <span class="fas fa-sign-out-alt"></span>&nbsp;&nbsp;Sign Up</a>
+                        <span class="fas fa-sign-out-alt"></span>&nbsp;&nbsp;<B>Sign Up</B></a>
                     <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Placement Officer</div>
                     <a class="dropdown-item" href="PlacementOfficerLogin.php">
-                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
-                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Principle Login</div>
+                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;<B>Login</B></a>
+                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Admin</div>
                     <a class="dropdown-item" href="Admin_Login.php">
-                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
+                        <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;<B>Login</B></a>
                 </div>
             </div>
 

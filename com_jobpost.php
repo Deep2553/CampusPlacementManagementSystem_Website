@@ -88,7 +88,7 @@ include "com_header.php";
 
                         <div class="form-group p-1">
                             <div class="input-group">
-                                <button type="submit" id="submit" disabled name="btnJadd" onclick="myFunction()"
+                                <button type="submit" id="submit"  name="btnJadd" 
                                      class="form-control btn-primary ">Add Job Details</button>
                             </div>
                         </div>
@@ -103,9 +103,9 @@ include "com_header.php";
     </section>
 </div>
 
-<script>
+<!-- <script>
     const submitButton = document.getElementById("submit");
-     const input = document.getElementById("txtsal");
+    const input = document.getElementById("txtsal");
     input.addEventListener("keyup", (e) => {
     const value = e.currentTarget.value;
     submitButton.disabled =  false;
@@ -121,7 +121,7 @@ include "com_header.php";
     function myFunction() {
         alert("Job Status Is Pending Waiting For Approvel");
     }
-</script>
+</script> -->
 
 
 <?php

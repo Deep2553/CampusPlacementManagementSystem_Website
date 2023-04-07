@@ -20,7 +20,10 @@ if (isset($_POST['btnAdd'])) {
 
   mysqli_query($conn, $query);
   mysqli_close($conn);
-
-  header("Location: ./CompanyLogin.php");
+  echo '<script language="javascript">';
+  echo 'alert("Waiting For Approvel After That You Can Login");';
+  echo 'window.location.href = "./CompanyLogin.php"';
+  echo '</script>';
+ // header("Location: ./CompanyLogin.php");
 }
 ?>

@@ -15,7 +15,11 @@ if (isset($_POST['btnJadd'])) {
     $query = "insert into jobdetails values(NULL,'$title','$skill','$degree','$discription','$salary',NULL,1,1, $userid,0,NOW())";
     $result = mysqli_query($conn, $query);
     $conn = mysqli_close($conn);
-    header("Location: ./com_jobpost.php");
+    echo '<script language="javascript">';
+    echo 'alert("Job Approval is Pending please wait For Approval");';
+    echo 'window.location.href = "./com_jobpost.php"';
+    echo '</script>';
+    //header("Location: ./com_jobpost.php");
 }
 
 ?>

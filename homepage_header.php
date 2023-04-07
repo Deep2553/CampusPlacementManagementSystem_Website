@@ -131,20 +131,20 @@
                 <a class="btn btn-outline-light " type="button" data-toggle="dropdown">
                     <span class="fa fa-user fa-2x fa-fade" style="color:#E8D5C4"></span></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <div class="dropdown-item-text text-white" style="background-color: #3A98B9">Student</div>
+                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Student</div>
                     <a class="dropdown-item" href="StudentLogin.php">
                         <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
-                    <a class="dropdown-item" href="./StudentRegistration.php">
-                        <span class="fas fa-sign-out-alt"></span>&nbsp;&nbsp;Sign Up</a>
-                    <div class="dropdown-item-text text-white" style="background-color: #3A98B9">Company</div>
+                    <!-- <a class="dropdown-item" href="./StudentRegistration.php">
+                        <span class="fas fa-sign-out-alt"></span>&nbsp;&nbsp;Sign Up</a> -->
+                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Company</div>
                     <a class="dropdown-item" href="CompanyLogin.php">
                         <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
                     <a class="dropdown-item" href="CompanyRegistration.php">
                         <span class="fas fa-sign-out-alt"></span>&nbsp;&nbsp;Sign Up</a>
-                    <div class="dropdown-item-text text-white" style="background-color: #3A98B9">Placement Officer</div>
+                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Placement Officer</div>
                     <a class="dropdown-item" href="PlacementOfficerLogin.php">
                         <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
-                    <div class="dropdown-item-text text-white" style="background-color: #3A98B9">Principle Login</div>
+                    <div class="dropdown-item-text text-white" style="background-color: #3C4B64">Principle Login</div>
                     <a class="dropdown-item" href="Admin_Login.php">
                         <span class="fas fa-sign-in-alt"></span>&nbsp;&nbsp;Login</a>
                 </div>

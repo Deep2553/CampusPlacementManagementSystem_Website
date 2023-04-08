@@ -154,7 +154,7 @@ include "homepage_header.php";
         </div>
         <div class="profile-card">
             <div class="img">
-                <img src="">
+                <img src="pic/03.png" height="160px" width="160px">
             </div>
             <div class="caption">
                 <h3>Viral Patel</h3>

@@ -35,7 +35,9 @@
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="VCSS/fileupload.css">
 
+    
     <style>
         .py-2 {
 
@@ -95,6 +97,11 @@
                 <a class="nav-link" href="Admin_facultylist.php">
                     <i class="fa-solid fa-circle-info"></i>
                     <span>Faculty List</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Admin_upload_faculty.php">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Upload Faculty List</span></a>
             </li>
 
             <li class="nav-item">

@@ -30,7 +30,7 @@ if (isset($_POST["Import"])) {
 
         fclose($file);
      
-        include "Admin_mail.php";
+       // include "Admin_mail.php";
         echo "<script type=\"text/javascript\">
         alert(\"CSV File has been successfully Imported.\");
         window.location = \"Admin_upload_faculty.php\"

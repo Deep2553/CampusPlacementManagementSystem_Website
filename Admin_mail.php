@@ -27,8 +27,8 @@ $mail->Password = "uiqjtsvdelynirkp";
 
 
 $mail->SetFrom("cpms388@gmail.com", "CPMS");
-
-$sql = "select f_email from faculty";
+$id = $_POST['id'];
+$sql = "select f_email from faculty where f_id=$id";
 $res = mysqli_query($con, $sql);
 if (mysqli_num_rows($res) > 0) {
   $mail->addReplyTo("cpms388@gmail.com");
@@ -37,22 +37,24 @@ if (mysqli_num_rows($res) > 0) {
     $mail->addBCC($x['f_email']);
 
   }
+  $sql1 = "select f_name from faculty where f_id=$id";
+  $records = mysqli_query($con, $sql1);
+  $y = mysqli_fetch_assoc($records);
+  $name = $y['f_name'];
   $mail->IsHTML(true);
   $mail->Subject = 'Registred - CPMS Portal ';
-  $mail->Body = '<h3>You can login to the platform using following credentials : </h3><h4>
-  Username: Your E-mail Address
-  </h4><h4>Password: 12345</h4>';
+  $mail->Body = "<h3>You can login to the platform using following credentials : </h3><h4>
+   Dear $name <br> Username: Your E-mail Address
+  </h4><h4>Password: 12345</h4>";
   $mail->AltBody = '<h3>You can login to the platform using following credentials : </h3><h4>
   Username: Your E-mail Address
   </h4><h4>Password: 12345</h4>';
 
   if ($mail->Send()) {
-    // $query = "update student set m_status=1 where m_status=0";
-    // mysqli_query($conn, $query);
-    header("Location: ./Admin_upload_faculty.php");
+    //  header("Location: ./Admin_facultylist.php");
   } else {
     echo "Email not sent";
-   
+
   }
 } else {
   echo "no data found";

@@ -10,21 +10,21 @@ include "homepage_header.php";
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="pic/1.jpg" class="d-block w-100" alt="..." height="750">
+            <img src="pic/1.jpg" class="d-block w-100 img-responsive " alt="..." style="max-height: 750px;">
             <div class="carousel-caption d-none d-md-block">
                 <h5 style=>CPMS</h5>
 
             </div>
         </div>
         <div class="carousel-item">
-            <img src="pic/2.jpg" class="d-block w-100" alt="..." height="750">
+            <img src="pic/2.jpg" class="d-block w-100 img-responsive" alt="..." style="max-height: 750px;">
             <div class="carousel-caption d-none d-md-block">
                 <!-- <h5>Second slide label</h5> -->
 
             </div>
         </div>
         <div class="carousel-item">
-            <img src="pic/3.jpg" class="d-block w-100" alt="..." height="750">
+            <img src="pic/3.jpg" class="d-block w-100 img-responsive" alt="..." style="max-height: 750px;">
             <div class="carousel-caption d-none d-md-block">
                 <!-- <h5>Third slide label</h5> -->
 

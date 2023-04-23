@@ -88,6 +88,8 @@
             margin: 0 auto;
             left: -25px;
         }
+
+      
     </style>
 
 

@@ -156,6 +156,11 @@
                                     Profile
                                 </a>
                                 <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="student_changepass.php">
+                                    <i class="fas fa-key fa-sm fa-fw mr-2 " style="color:#3C4B64"></i>
+                                    Change Password
+                                </a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 " style="color:#3C4B64"></i>
                                     Logout

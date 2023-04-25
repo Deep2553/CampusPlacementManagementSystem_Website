@@ -13,8 +13,8 @@ if (isset($_POST["Import"])) {
             $d = explode("/", $emapData[2]);
             $password = md5($emapData[7]);
           
-            $sql = "INSERT into faculty (`f_id`, `f_name`,`f_designation`,`f_dob`, `f_email`, `f_gender`,`f_contactnumber`, `role`, `f_password`) 
-                values(NULL,'$emapData[0]','$emapData[1]',STR_TO_DATE('$d[2],$d[0],$d[1]','%Y,%m,%d'),'$emapData[3]','$emapData[4]','$emapData[5]','$emapData[6]','$password')";
+            $sql = "INSERT into faculty (`f_id`, `f_name`,`f_designation`,`f_dob`, `f_email`, `f_gender`,`f_contactnumber`, `role`, `f_password`,`l_status`) 
+                values(NULL,'$emapData[0]','$emapData[1]',STR_TO_DATE('$d[2],$d[0],$d[1]','%Y,%m,%d'),'$emapData[3]','$emapData[4]','$emapData[5]','$emapData[6]','$password',0)";
            
             $result = mysqli_query($conn, $sql);
             if (!$result) {

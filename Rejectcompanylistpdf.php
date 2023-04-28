@@ -52,9 +52,9 @@ $pdf->Cell(100, 10, 'REJECT COMPANY LIST', 1, 0, 'C');
 $pdf->Ln(20);
 $pdf->SetFont('Times', '', 12);
 $pdf->SetFillColor(193, 229, 252);
-$pdf->Cell(20, 10, 'No', 1, 0, 'C', true);
+$pdf->Cell(10, 10, 'No', 1, 0, 'C', true);
 $pdf->Cell(40, 10, 'Name', 1, 0, 'C', true);
-$pdf->Cell(40, 10, 'Email', 1, 0, 'C', true);
+$pdf->Cell(60, 10, 'Email', 1, 0, 'C', true);
 $pdf->Cell(40, 10, 'Person Name', 1, 0, 'C', true);
 $pdf->Cell(40, 10, 'Person Number', 1, 1, 'C', true);
 $count = 0;
@@ -62,9 +62,9 @@ $conn = mysqli_connect("localhost", "root", "", "minor_project");
 $query = "select * from company where a_status=0 and status=0";
 $records = mysqli_query($conn, $query);
 while (($row = $records->fetch_array()) == true) {
-    $pdf->Cell(20, 10, ++$count, 1, 0, 'C');
+    $pdf->Cell(10, 10, ++$count, 1, 0, 'C');
     $pdf->Cell(40, 10, $row['c_name'], 1, 0, 'C');
-    $pdf->Cell(40, 10, $row['c_email'], 1, 0, 'C');
+    $pdf->Cell(60, 10, $row['c_email'], 1, 0, 'C');
     $pdf->Cell(40, 10, $row['c_pname'], 1, 0, 'C');
     $pdf->Cell(40, 10, $row['c_pcontact'], 1, 1, 'C');
 }

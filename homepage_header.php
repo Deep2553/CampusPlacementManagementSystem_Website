@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Campus placement managment system</title>
+    <title>Campus Placement Managment System</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="fontawesome-6\css\all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,22 +21,31 @@
     <link href="./css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-    <link href="css/cnt.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-4.6.1/dist/css/bootstrap.css">
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" />
+    <!-- Custom styles for Contact -->
+    <link href="css/cnt.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" />
+    <!-- Custom styles for Opportunities part in that company logo slide -->
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" />
 
+    <!-- Custom styles for Datatable -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+
+    <!-- Custom styles for Team Members -->
     <link rel="stylesheet" href="VCSS/teamMembers.css">
+
+    <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="VCSS/style.css">
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" /> -->
 
     <style>
         html {
@@ -88,8 +97,6 @@
             margin: 0 auto;
             left: -25px;
         }
-
-      
     </style>
 
 
@@ -157,12 +164,12 @@
 
         <!-- Begin Page Content -->
 
-
-        <script>
+        <!-- Scroll-behavior For Page Content -->
+        <!-- <script>
             const btn = document.getElementById('elem');
 
             btn.addEventListener('click', () => window.scrollTo({
                 top: 400,
                 behavior: 'smooth',
             }));
-        </script>
+        </script> -->

@@ -30,7 +30,7 @@ mysqli_close($conn);
                     <th>Email</th>
                     <th>Degree Name</th>
                     <th>Job Title</th>
-                    <th>Job Type</th>
+                   
 
                 </tr>
             </thead>
@@ -45,7 +45,7 @@ mysqli_close($conn);
                 echo "<td>" . $row['s_email'] . "</td>";
                 echo "<td>" . $row['s_degname'] . "</td>";
                 echo "<td>" . $row['j_title'] . "</td>";
-                echo "<td>" . $row['j_type'] . "</td>";
+                
 
 
                 echo "</tr>";

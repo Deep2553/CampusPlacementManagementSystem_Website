@@ -44,15 +44,16 @@ if (mysqli_num_rows($res) > 0) {
   $mail->IsHTML(true);
   $mail->Subject = 'Registred - CPMS Portal ';
   $mail->Body = "<h3>You can login to the platform using following credentials : </h3><h4>
-   Dear $name <br> Username: Your E-mail Address
-  </h4><h4>Your Temporary Password Is : 12345 <br>
-  You Can Change After Login
+   Dear $name <br>Your Username Is : Your E-mail Address<br>
+   Your Temporary Password Is : 12345<br><br>
+   You Can Change Your Password After Login
   </h4>";
   $mail->AltBody = "<h3>You can login to the platform using following credentials : </h3><h4>
-  Dear $name <br> Username: Your E-mail Address
- </h4><h4>Your Temporary Password Is : 12345 <br>
- You Can Change After Login
+  Dear $name <br>Your Username Is : Your E-mail Address<br>
+  Your Temporary Password Is : 12345<br><br>
+  You Can Change Your Password After Login
  </h4>";
+
 
   if ($mail->Send()) {
     //  header("Location: ./Admin_facultylist.php");

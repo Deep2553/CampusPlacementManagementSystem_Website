@@ -23,12 +23,13 @@
     <!-- Custom styles for this page -->
 
 
-    <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/parsley/parsley.css" />
 
-    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap-select/bootstrap-select.min.css" /> -->
 
-    <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/datepicker/bootstrap-datepicker.css" /> -->
 
+    <!-- It Is USe For Datatables -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
@@ -56,6 +57,20 @@
             background: #7388AB;
             color: white;
             font-weight: bold;
+        }
+
+        .py-2 {
+
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+
+        }
+
+        .py-2:hover {
+
+            box-shadow: 5px 6px 6px 2px #e9ecef;
+            transform: scale(1.05);
         }
     </style>
 

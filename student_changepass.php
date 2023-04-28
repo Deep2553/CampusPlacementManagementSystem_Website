@@ -29,7 +29,7 @@ include('header.php');
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
-                                    <span class="fa fa-user mr-2 text-primary"></span>New Password
+                                    <span class="fa-solid fa-key mr-2 text-primary"></span>New Password
                                 </span>
                             </div>
                             <input type="password" name="txtNewPass" id="txtNewPass" class="form-control">
@@ -41,7 +41,7 @@ include('header.php');
 
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
-                                    <span class="fa fa-phone mr-2 text-primary"></span>Re-Enter Password
+                                <i class="fa-solid fa-key mr-2 text-primary"></i>Re-Enter Password
                                 </span>
                             </div>
                             <input type="password" name="txtRePass" id="txtRePass" class="form-control">
@@ -76,7 +76,7 @@ include('header.php');
             alert("Passwords did not match");
             return false;
         } else {
-            alert("Password created successfully");
+            alert("Password Changed successfully");
             return true;
         }
         return false;

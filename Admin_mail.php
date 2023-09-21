@@ -22,7 +22,7 @@ $mail->Port = 587;
 $mail->Host = "smtp.gmail.com";
 
 $mail->Username = "cpms388@gmail.com";
-$mail->Password = "uiqjtsvdelynirkp";
+$mail->Password = "xxxxxxxxxxxxxxxxxxx";
 
 
 

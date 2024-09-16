@@ -1,26 +1,20 @@
-#!/usr/bin/env groovy
-
 pipeline {
-
-    agent {
-        docker {
-            image 'php'
-            args '-u root'
-        }
-    }
+    agent any
 
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                sh 'php install'
+                git 'https://github.com/Kennibravo/jenkins-laravel.git'
+                sh 'composer install'
+                sh 'cp .env.example .env'
+                sh 'php artisan key:generate'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
-                sh 'php test'
+                sh './vendor/bin/phpunit'
             }
         }
     }
 }
+

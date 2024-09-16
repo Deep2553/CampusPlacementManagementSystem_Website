@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'composer install'
+               git 'https://github.com/Deep2553/CampusPlacementManagementSystem_Website.git'
             }
         }
     }

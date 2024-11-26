@@ -9,7 +9,6 @@
 <body>
 <?php
 include "./home_page.php";
-echo "welcome index";
 ?>    
 
 </body>

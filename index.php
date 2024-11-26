@@ -9,6 +9,7 @@
 <body>
 <?php
 include "./home_page.php";
+echo "";
 ?>    
 
 </body>

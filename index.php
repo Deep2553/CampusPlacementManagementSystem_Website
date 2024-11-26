@@ -9,7 +9,7 @@
 <body>
 <?php
 include "./home_page.php";
-echo "";
+echo "vikas";
 ?>    
 
 </body>
